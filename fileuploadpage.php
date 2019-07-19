@@ -11,7 +11,7 @@
 		header("Location: login1.html");
 }
 
-$target_dir = "~/workspace/www/uploads/";
+$target_dir = "~/workspace/www/uploads/"; // <-- change this to your uploads directory
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
